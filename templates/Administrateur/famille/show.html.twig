@@ -1,0 +1,71 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Famille{% endblock %}
+
+{% block body %}
+    <h1>Famille</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ famille.id }}</td>
+            </tr>
+            <tr>
+                <th>Famcode</th>
+                <td>{{ famille.famcode }}</td>
+            </tr>
+            <tr>
+                <th>Famlibelle</th>
+                <td>{{ famille.famlibelle }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <h1>Medicament Associée</h1>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Meddepotlegal</th>
+            <th>Mednomcommercial</th>
+            <th>Medcomposition</th>
+            <th>Medeffets</th>
+            <th>Medcontreindic</th>
+            <th>Medprixechantillon</th>
+            <th>Famille</th>
+            <th>actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for medicament in famille.medicaments %}
+            <tr>
+                <td>{{ medicament.id }}</td>
+                <td>{{ medicament.meddepotlegal }}</td>
+                <td>{{ medicament.mednomcommercial }}</td>
+                <td>{{ medicament.medcomposition }}</td>
+                <td>{{ medicament.medeffets }}</td>
+                <td>{{ medicament.medcontreindic }}</td>
+                <td>{{ medicament.medprixechantillon }}</td>
+                <td>{{ medicament.famille.famlibelle }}</td>
+                <td>
+                    <a href="{{ path('medicament_show', {'id': medicament.id}) }}">show</a>
+                    <a href="{{ path('medicament_edit', {'id': medicament.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="8">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('famille_index') }}">back to list</a>
+
+    <a href="{{ path('famille_edit', {'id': famille.id}) }}">edit</a>
+
+    {{ include('famille/_delete_form.html.twig') }}
+{% endblock %}

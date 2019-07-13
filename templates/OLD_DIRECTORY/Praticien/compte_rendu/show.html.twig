@@ -1,0 +1,71 @@
+{% extends 'Praticien/base.html.twig' %}
+
+{% block title %} N°{{ compte_rendu.id }}{% endblock %}
+
+{% block body %}
+    <h1>CompteRendu</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Numéro du compte rendu</th>
+                <td>{{ compte_rendu.id }}</td>
+            </tr>
+            <tr>
+                <th>Date Visite</th>
+                <td>{{ compte_rendu.dateVisite ? compte_rendu.dateVisite|date('Y-m-d') : '' }}</td>
+            </tr>
+            <tr>
+                <th>Date Saisie</th>
+                <td>{{ compte_rendu.dateSaisie ? compte_rendu.dateSaisie|date('Y-m-d') : '' }}</td>
+            </tr>
+            <tr>
+                <th>Coefficient</th>
+                <td>{{ compte_rendu.coefficient }}</td>
+            </tr>
+            <tr>
+                <th>Bilan</th>
+                <td>{{ compte_rendu.bilan }}</td>
+            </tr>
+            <tr>
+                <th>Clôture</th>
+                <td>{{ compte_rendu.cloture ? 'Yes' : 'No' }}</td>
+            </tr>
+            <tr>
+                <th>Documentation</th>
+                <td>{{ compte_rendu.doc ? 'Yes' : 'No' }}</td>
+            </tr>
+            <tr>
+                <th>Remplacant</th>
+                <td>{{ compte_rendu.remplacant }}</td>
+            </tr>
+            <tr>
+                <th>Motif</th>
+                <td>{{ compte_rendu.motif }}</td>
+            </tr>
+            <tr>
+                <th>Produits</th>
+                <td>
+                    {% for produit in  compte_rendu.produits %}
+                        {{ produit.nomCommercial }} ,
+                        {% else %}
+                        Aucun produit.
+                    {% endfor %}
+                    {#{ compte_rendu.produits | join (', ') }#}
+
+                </td>
+            </tr>
+            <tr>
+                <th>Echantillons</th>
+                <td>  {% for echantillon in  compte_rendu.echantillons %}
+                        {{ echantillon.nomCommercial }},
+                    {% else %}
+                        Aucun echantillons.
+                    {% endfor %}</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <a href="{{ path('praticien_compte_rendu_index') }}">Retourner à la liste des comptes rendu</a>
+{% endblock %}

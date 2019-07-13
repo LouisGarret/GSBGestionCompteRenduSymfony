@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <div class="jumbotron mt-3">
+            <h1 class="display-3">Bienvenue chez GSB</h1>
+            <p class="lead">Ce site vous servira à observer les différents comptes-rendus créés par nos praticiens mais également differents types de médicaments.</p>
+
+                <hr class="my-4">
+                <p>N'attendez plus, accédez à votre espace personnel !</p>
+                <p class="lead">
+                    <a class="btn btn-outline-primary btn-lg" href="{{ path('fos_user_security_login') }}" role="button">Connexion</a>
+                </p>
+        </div>
+    </div>
+{% endblock %}

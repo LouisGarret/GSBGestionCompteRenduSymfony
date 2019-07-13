@@ -1,0 +1,34 @@
+{% extends 'Visiteur/base.html.twig' %}
+{% block title %}Accueil Visiteur{% endblock %}
+{% block body %}
+    <div class="container">
+        <div class="jumbotron mt-3">
+            <h1 class="display-3">Bienvenue chez GSB</h1>
+            <p class="lead">Ce site vous servira à observer les différents comptes-rendus créés par nos praticiens mais également differents types de médicaments.</p>
+
+            <div class="row">
+                <div class="col">
+                    <h5><b>Compte - Rendu</b></h5>
+                    <p class="lead">
+                        <a class="btn btn-outline-primary" href="{{ path('visiteur_compte_rendu_new') }}" role="button">Nouveau</a>
+                    </p>
+                    <p class="lead">
+                        <a class="btn btn-outline-primary" href="{{ path('visiteur_compte_rendu_index') }}" role="button">Consulter</a>
+                    </p>
+                </div>
+                <div class="col">
+                    <h5><b>Consulter</b></h5>
+                    <p class="lead">
+                        <a class="btn btn-outline-primary" href="{{ path('visiteur_medicament_index') }}" role="button">Médicaments</a>
+                    </p>
+                    <p class="lead">
+                        <a class="btn btn-outline-primary" href="{{ path('visiteur_praticien_index') }}" role="button">Praticiens</a>
+                    </p>
+                    <p class="lead">
+                        <a class="btn btn-outline-primary" href="{{ path('visiteur_vehicule_index') }}" role="button">Vehicules</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

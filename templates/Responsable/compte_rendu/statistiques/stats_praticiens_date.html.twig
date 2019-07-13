@@ -1,0 +1,35 @@
+{% extends 'Responsable/base.html.twig' %}
+
+{% block title %}Statistique{% endblock %}
+
+{% block body %}
+<div class="row">
+	<div class="col-12">
+		<h3 class="mt-2 text-center text-primary"><b>Total des comptes rendu par visiteur</b></h3>
+		<div id="div_chart"></div>
+	</div>
+</div>
+
+	<table class="table table-borderless table-striped">
+		<tr>
+			<th>Visiteur</th>
+			<th>Date de visite</th>
+		</tr>
+		{% for ticket in tickets %}
+			<tr>
+				<td>
+					{{ ticket.username }}
+				</td>
+				<td>
+					{{ ticket.dateVisite | date('d/m/Y') }}
+				</td>
+			</tr>
+		{% endfor %}
+	</table>
+
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<script type="text/javascript">
+		{{ gc_draw(piechart, 'div_chart') }}
+	</script>
+
+{% endblock %}

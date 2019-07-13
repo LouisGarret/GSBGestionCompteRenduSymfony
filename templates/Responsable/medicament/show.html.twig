@@ -1,0 +1,43 @@
+{% extends 'Responsable/base.html.twig' %}
+
+{% block title %}Medicament{% endblock %}
+
+{% block body %}
+    <h1>Medicament</h1>
+
+    <table class="table">
+        <tbody>
+        <tr>
+            <th>Dépôt Légal</th>
+            <td>{{ medicament.DepotLegal }}</td>
+        </tr>
+        <tr>
+            <th>Nom Commercial</th>
+            <td>{{ medicament.NomCommercial }}</td>
+        </tr>
+        <tr>
+            <th>Composition</th>
+            <td>{{ medicament.Composition }}</td>
+        </tr>
+        <tr>
+            <th>Effets</th>
+            <td>{{ medicament.Effets }}</td>
+        </tr>
+        <tr>
+            <th>Contre Indication</th>
+            <td>{{ medicament.ContreIndic }}</td>
+        </tr>
+        <tr>
+            <th>Prix Echantillon</th>
+            <td>{{ medicament.PrixEchantillon }}</td>
+        </tr>
+        <tr>
+            <th>Famille </th>
+            <td><a href="{{ path('responsable_famille_show', {'id': medicament.famille.id}) }}">{{ medicament.famille.libelle }}</a></td>
+        </tr>
+        </tbody>
+    </table>
+
+    <a class="btn btn-outline-primary" href="{{ path('responsable_medicament_index') }}">Retourner à la liste des médicaments</a>
+
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'Delegue/compte_rendu/statistiques/base.html.twig' %}
+
+{% block title %}Statistique{% endblock %}
+
+{% block body %}
+	<h1 class="mt-3 mb-3 text-center">Statistiques des comptes rendu</h1>
+	<div class="container-fluid">
+		<div class="jumbotron">
+			<div class="row">
+				<div class="col-12">
+						<h3 class="mt-2 text-center text-primary"><b>Total des comptes rendu de la region {{ region.libelle }}</b></h3>
+						<div id="div_chart_region"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}

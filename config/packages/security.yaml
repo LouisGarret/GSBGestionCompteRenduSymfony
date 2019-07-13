@@ -1,0 +1,66 @@
+security:
+    encoders:
+      App\Entity\User:
+        algorithm: bcrypt
+    # https://symfony.com/doc/current/security.html#where-do-users-come-from-user-providers
+    role_hierarchy:
+        ROLE_DELEG_REGIONAL: [ROLE_VISITEUR, ROLE_USER]
+        ROLE_RESP_SECTEUR: [ROLE_USER]
+        ROLE_VISITEUR: [ROLE_USER]
+        ROLE_ADMIN:       [ROLE_VISITEUR, ROLE_PRATICIEN, ROLE_DELEG_REGIONAL, ROLE_RESP_SECTEUR]
+        ROLE_SUPER_ADMIN: [ROLE_ADMIN, ROLE_ALLOWED_TO_SWITCH]
+    providers:
+        chain_provider:
+            chain:
+                providers: [fos_userbundle, in_memory]
+        in_memory:
+            memory:
+                users:
+                    superadmin:
+                        password: 'superadminpw'
+                        roles: ['ROLE_SUPER_ADMIN']
+        fos_userbundle:
+            id: fos_user.user_provider.username_email
+    firewalls:
+        dev:
+            pattern: ^/(_(profiler|wdt)|css|images|js)/
+            security: false
+        api_login:
+            pattern:  ^/api/auth/login
+            stateless: true
+            anonymous: true
+            json_login:
+                provider: chain_provider
+                check_path:               /api/auth/login
+                success_handler:          lexik_jwt_authentication.handler.authentication_success
+                failure_handler:          lexik_jwt_authentication.handler.authentication_failure
+            provider: chain_provider
+            guard:
+                authenticators:
+                    - lexik_jwt_authentication.jwt_token_authenticator
+        main:
+            pattern: ^/
+            form_login:
+                provider: chain_provider
+                csrf_token_generator: security.csrf.token_manager
+                login_path: fos_user_security_login
+                check_path: fos_user_security_check
+                always_use_default_target_path: false
+                default_target_path: redirection
+            logout:
+                path:   fos_user_security_logout
+                target: fos_user_security_login
+            anonymous:    true
+    access_denied_url: redirection
+
+    # Easy way to control access for large sections of your site
+    # Note: Only the *first* access control that matches will be used
+    access_control:
+        # - { path: ^/profile, roles: ROLE_USER }
+        #- { path: ^/admin, roles: [ROLE_ADMIN, ROLE_SUPER_ADMIN]}
+        #- { path: ^/$, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        #- { path: ^/connexion$, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        #- { path: ^/visiteur, role: ROLE_VISITEUR}
+        #- { path: ^/praticien, role: ROLE_PRATICIEN}
+        #- { path: ^/delegue, role: ROLE_DELEG_REGIONAL}
+        #- { path: ^/responsable, role: ROLE_RESP_SECTEUR}

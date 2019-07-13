@@ -1,0 +1,11 @@
+easy_admin:
+    entities:
+        # List the entity class name you want to manage
+        - App\Entity\User
+        - App\Entity\Famille
+        - App\Entity\Medicament
+        - App\Entity\CompteRendu
+        - App\Entity\Praticien
+        - App\Entity\Specialite
+        - App\Entity\TypePraticien
+        - App\Entity\Vehicule

@@ -1,0 +1,23 @@
+fos_user:
+  db_driver: orm # other valid values are 'mongodb' and 'couchdb'
+  firewall_name: main
+  user_class: App\Entity\User
+  from_email:
+      address: "louis@garret.ovh"
+      sender_name: "louis@garret.ovh"
+  registration:
+    form:
+        type: App\Form\RegistrationType
+    confirmation:
+        enabled: true
+        template:   FOSUserBundle:Registration:email.txt.twig
+        from_email:
+          address:        "no-reply@joeymasip.com"
+          sender_name:    "No Reply Registration"
+  service:
+      mailer: fos_user.mailer.twig_swift
+  resetting:
+      email:
+        template:   FOSUserBundle:Resetting:email.txt.twig
+# add more service definitions when explicit configuration is needed
+# please note that last definitions always *replace* previous ones

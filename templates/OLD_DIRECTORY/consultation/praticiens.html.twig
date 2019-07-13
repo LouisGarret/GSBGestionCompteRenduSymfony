@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Praticiens{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <div class="jumbotron mt-3">
+            <h3 class="mb-3">Liste des praticiens</h3>
+            {% for type, messages in app.session.flashbag.all() %}
+                {% for message in messages %}
+                    <div class="alert alert-{{ type }} alert-dismissible fade show" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <strong>{{ message }}</strong>
+                    </div>
+
+                {% endfor %}
+            {% endfor %}
+            <table class="table">
+                <tr>
+                    <th scope="col">Nom</th>
+                    <th scope="col">Prénom</th>
+                    <th scope="col">Nom d'utilisateur</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Rôle</th>
+                    <th scope="col">Secteur</th>
+                    <th scope="col" class="text-center">Action</th>
+                </tr>
+                {% for user in users %}
+                    <tr>
+                        <td>{{ user.lastName }}</td>
+                        <td>{{ user.firstName }}</td>
+                        <td>{{ user.username }}</td>
+                        <td>{{ user.email }}</td>
+                        <td>{{ user.roles | join (', ') }}</td>
+                        <td>{{ user.secteur }}</td>
+
+
+                    </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+{% endblock %}
+

@@ -1,0 +1,117 @@
+{% extends 'Visiteur/base.html.twig' %}
+
+{% block title %}Liste{% endblock %}
+
+{% block body %}
+
+    <div class="row">
+        <div class="col-6">
+            <h1 class="mb-3">Liste des comptes rendus</h1>
+        </div>
+        <div class="col-6 text-right">
+            <a class="btn btn-outline-primary mb-2" href="{{ path('visiteur_compte_rendu_new') }}">Nouveau <i class="fas fa-plus"></i></a>
+        </div>
+    </div>
+
+    {% set praticien = "" %}
+    {% set visiteur = "" %}
+    <div class="row">
+        {% for compte_rendu in compte_rendus|reverse %}
+            {% if visiteur != compte_rendu.visiteur.firstName %}
+                {% set visiteur = compte_rendu.visiteur.firstName %}
+            {% endif %}
+            {% if praticien != compte_rendu.praticien.prenom %}
+                {% set praticien = compte_rendu.praticien.prenom %}
+            {% endif %}
+            <div class="col-6">
+                <div class="row">
+                    <div class="col-2">
+                        <div class="bg-primary mb-0 rounded-top shadow pt-1 pb-1">
+                            <h5 class="text-white text-center my-auto"><i class="fas fa-file-signature"></i></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="card border-secondary mb-3 mt-0" style="max-width: 40em; border-top-left-radius:0!important;">
+                    <div class="card-header text-center">
+                        <div class="row border-bottom border-primary">
+                            <div class="col-5 border-right border-primary my-auto ">
+                                <h3 class="display-5">Compte rendu</h3>
+                            </div>
+                            <div class="col-5 my-auto">
+                                <p><strong>Praticien :</strong> </p>
+                                <p><a href="{{ path('user_show', {'id': compte_rendu.praticien.id}) }}">{{ compte_rendu.praticien.prenom| title  }} {{ compte_rendu.praticien.nom | title}}</a></p>
+                            </div>
+                            <div class="col-2 border-left border-primary my-auto">
+                                <h3> N°: <a href="{{ path('visiteur_compte_rendu_show', {'id': compte_rendu.id}) }}">{{ compte_rendu.id }}</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body text-center">
+                        <h4 class="card-title">Détails :</h4>
+                        <hr>
+                        <div class="card-text">
+                            <div class="row">
+                                <div class="col">
+                                    <p><strong>Vehicule :</strong></p>
+                                    {% if compte_rendu.vehicule == null %}
+                                    <p>Pas de véhicule</p>
+                                    {% else %}
+                                        <p>{{ compte_rendu.vehicule.id }}</p>
+                                    {% endif %}
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <p><strong>Clôturé :</strong></p>
+                                    <p>{{ compte_rendu.cloture ? '<i class="fas fa-check text-primary"></i>' : '<i class="fas fa-times text-primary"></i>' }}</p>
+                                </div>
+                                <div class="col-6">
+                                    <p><strong>Documentation :</strong></p>
+                                    <p>{{ compte_rendu.doc ? '<i class="fas fa-check text-primary"></i>' : '<i class="fas fa-times text-primary"></i>' }}</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <p><strong>Remplacant :</strong></p>
+                                    <p>{{ compte_rendu.remplacant ? '<i class="fas fa-check text-primary"></i>' : '<i class="fas fa-times text-primary"></i>' }} {{ compte_rendu.remplacant }}</p>
+                                </div>
+                                <div class="col-6">
+                                    <p><strong>Visiteur :</strong></p>
+                                    <p><a href="{{ path('user_show', {'id': compte_rendu.visiteur.id}) }}">{{ compte_rendu.visiteur.firstName| title }} {{ compte_rendu.visiteur.firstName| title }}</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="row">
+                            <div class="col-6 my-auto">
+                                <h5 class="text-center"><strong>Date Visite : </strong><a class="text-primary">{{ compte_rendu.dateVisite ? compte_rendu.dateVisite|date('d-m-Y') : '' }}</a></h5>
+                            </div>
+                            {% if compte_rendu.cloture == 0 %}
+                                <div class="col-3 my-auto text-right">
+                                    <a class="btn btn-outline-primary" href="{{ path('visiteur_compte_rendu_edit', {'id': compte_rendu.id}) }}" role="button"><i class="fas fa-edit"></i></a>
+                                </div>
+                                <div class="col-3 my-auto text-right">
+                                    <a class="btn btn-outline-primary" href="{{ path('visiteur_compte_rendu_show', {'id': compte_rendu.id}) }}" role="button">Détail <i class="fas fa-angle-right"></i></a>
+                                </div>
+                            {% else %}
+                                <div class="col-6 my-auto text-right">
+                                    <a class="btn btn-outline-primary" href="{{ path('visiteur_compte_rendu_show', {'id': compte_rendu.id}) }}" role="button">Détail <i class="fas fa-angle-right"></i></a>
+                                </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% else %}
+            <div class="col-6">
+                <div class="card border-secondary mb-3">
+                    <div class="card-header">Compte Rendu</div>
+                    <div class="card-body">
+                        <p class="card-text">Aucun compte rendu disponible :(</p>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

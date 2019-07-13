@@ -1,0 +1,49 @@
+{% extends 'Responsable/base.html.twig' %}
+
+{% block title %}Praticiens{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.18/datatables.min.css"/>
+
+{% endblock %}
+
+{% block body %}
+    <h3 class="mb-3">Liste des praticiens</h3>
+    {% for type, messages in app.session.flashbag.all() %}
+        {% for message in messages %}
+            <div class="alert alert-{{ type }} alert-dismissible fade show" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <strong>{{ message }}</strong>
+            </div>
+        {% endfor %}
+    {% endfor %}
+    <table class="table table-striped table-bordered" id="tableau">
+        <thead>
+        <tr>
+            <th scope="col">Nom</th>
+            <th scope="col">Prénom</th>
+            <th scope="col">Email</th>
+            <th scope="col">Type du praticien - Spécialité</th>
+            <th scope="col">Région</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for user in praticiens %}
+            <tr>
+                <td>{{ user.nom }}</td>
+                <td>{{ user.prenom }}</td>
+                <td>{{ user.email }}</td>
+                <td>{{ user.typePraticien.libelle }} - {{  user.specialite.libelle }}</td>
+                <td>{{ user.region.libelle }}</td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="8">Aucun praticien n'a été trouvé.</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
+

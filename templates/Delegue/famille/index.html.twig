@@ -1,0 +1,29 @@
+{% extends 'Delegue/base.html.twig' %}
+
+{% block title %}Famille index{% endblock %}
+
+{% block body %}
+    <h1>Famille index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Code</th>
+                <th>Libelle</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for famille in familles %}
+            <tr>
+                <td>{{ famille.Code }}</td>
+                <td><a href="{{ path('delegue_famille_show', {'id': famille.id}) }}">{{ famille.Libelle }}</a></td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="4">Aucune famille n'a été trouvée.</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}

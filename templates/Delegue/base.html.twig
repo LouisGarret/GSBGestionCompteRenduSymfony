@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil Délégué Régional{% endblock %}
+
+{% block menu %}
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+            <a class="nav-link" href="{{ path('delegue_index') }}">Accueil</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Compte rendu</a>
+            <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 35px, 0px);">
+                <a class="dropdown-item" href="{{ path('delegue_compte_rendu_new') }}">Nouveau</a>
+                <a class="dropdown-item" href="{{ path('delegue_compte_rendu_index') }}">Consulter</a>
+                <a class="dropdown-item" href="{{ path('delegue_compte_rendu_stats_praticiens') }}">Statistiques</a>
+                <a class="dropdown-item" href="{{ path('delegue_compte_rendu_stats_jour') }}">Statistiques par date</a>
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Consulter</a>
+            <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 35px, 0px);">
+                <a class="dropdown-item" href="{{ path('delegue_medicament_index') }}">Médicaments</a>
+                <a class="dropdown-item" href="{{ path('delegue_praticiens_index') }}">Praticiens</a>
+                <a class="dropdown-item" href="{{ path('delegue_vehicule_index') }}">Vehicule</a>
+            </div>
+        </li>
+    </ul>
+{% endblock menu %}
+
+{% block body %}
+
+{% endblock %}

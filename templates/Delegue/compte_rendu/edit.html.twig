@@ -1,0 +1,13 @@
+{% extends 'Delegue/base.html.twig' %}
+
+{% block title %}Edit CompteRendu{% endblock %}
+
+{% block body %}
+    <h1>Edit CompteRendu</h1>
+
+    {{ include('Visiteur/compte_rendu/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('visiteur_compte_rendu_index') }}">back to list</a>
+
+    {{ include('Visiteur/compte_rendu/_delete_form.html.twig') }}
+{% endblock %}

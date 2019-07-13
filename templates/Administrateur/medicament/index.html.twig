@@ -1,0 +1,52 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Medicament index{% endblock %}
+
+{% block body %}
+    <h1>Medicament index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Meddepotlegal</th>
+                <th>Mednomcommercial</th>
+                <th>Medcomposition</th>
+                <th>Medeffets</th>
+                <th>Medcontreindic</th>
+                <th>Medprixechantillon</th>
+                <th>Famille</th>
+                {% if app.user.hasRole('ROLE_SUPER_ADMIN') %}
+                    <th>actions</th>
+                {%  endif %}
+
+            </tr>
+        </thead>
+        <tbody>
+        {% for medicament in medicaments %}
+            <tr>
+                <td>{{ medicament.id }}</td>
+                <td>{{ medicament.meddepotlegal }}</td>
+                <td>{{ medicament.mednomcommercial }}</td>
+                <td>{{ medicament.medcomposition }}</td>
+                <td>{{ medicament.medeffets }}</td>
+                <td>{{ medicament.medcontreindic }}</td>
+                <td>{{ medicament.medprixechantillon }}</td>
+                <td><a href="{{ path('famille_show', {'id': medicament.famille.id}) }}">{{ medicament.famille.famlibelle }}</a></td>
+                {% if app.user.hasRole('ROLE_SUPER_ADMIN') %}
+                <td>
+                    <a href="{{ path('medicament_show', {'id': medicament.id}) }}">show</a>
+                    <a href="{{ path('medicament_edit', {'id': medicament.id}) }}">edit</a>
+                </td>
+                {%  endif %}
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="8">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('medicament_new') }}">Create new</a>
+{% endblock %}

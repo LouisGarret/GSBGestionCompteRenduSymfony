@@ -1,0 +1,27 @@
+{% extends 'Delegue/base.html.twig' %}
+
+{% block title %}Vehicule{% endblock %}
+
+{% block body %}
+    <h1>Vehicule</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Immatriculation</th>
+                <td>{{ vehicule.id }}</td>
+            </tr>
+            <tr>
+                <th>Marque</th>
+                <td>{{ vehicule.marque }}</td>
+            </tr>
+            <tr>
+                <th>Modèle</th>
+                <td>{{ vehicule.modele }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('delegue_vehicule_index') }}">Retourner à la liste</a>
+
+{% endblock %}

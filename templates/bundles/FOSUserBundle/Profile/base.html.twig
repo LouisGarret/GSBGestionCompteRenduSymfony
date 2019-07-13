@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %} - Compte-Rendu</title>
+
+    <!-- <link href="https://bootswatch.com/4/materia/bootstrap.min.css" rel="stylesheet">-->
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.18/datatables.min.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    {% block stylesheets %}<link rel="stylesheet" href="/css/style.css">{% endblock %}
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a  href="{{ path('redirection') }}" class="navbar-brand"><img src="/img/logo-gsb.png" alt="GSB" ></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor01">
+        {% if is_granted('ROLE_PRATICIEN') %}
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="{{ path('praticien_index') }}">Accueil</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Compte rendu</a>
+                <div class="dropdown-menu" x-placement="bottom-start">
+                    <a class="dropdown-item" href="{{ path('praticien_compte_rendu_index') }}">Consulter</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Consulter</a>
+                <div class="dropdown-menu" x-placement="bottom-start">
+                    <a class="dropdown-item" href="{{ path('praticien_medicament_index') }}">Médicaments</a>
+                </div>
+            </li>
+        </ul>
+        {% elseif is_granted('ROLE_VISITEUR') %}
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{ path('visiteur_index') }}">Accueil</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Compte rendu</a>
+                    <div class="dropdown-menu" x-placement="bottom-start">
+                        <a class="dropdown-item" href="{{ path('visiteur_compte_rendu_new') }}">Nouveaux</a>
+                        <a class="dropdown-item" href="{{ path('visiteur_compte_rendu_index') }}">Consulter</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Consulter</a>
+                    <div class="dropdown-menu" x-placement="bottom-start">
+                        <a class="dropdown-item" href="{{ path('visiteur_medicament_index') }}">Médicaments</a>
+                        <a class="dropdown-item" href="{{ path('visiteur_praticien_index') }}">Praticiens</a>
+                    </div>
+                </li>
+            </ul>
+        {% elseif is_granted('ROLE_DELEG_REGIONAL') %}
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{ path('delegue_index') }}">Accueil</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Compte rendu</a>
+                    <div class="dropdown-menu" x-placement="bottom-start">
+                        <a class="dropdown-item" href="{{ path('delegue_compte_rendu_show') }}">Consulter</a>
+                        <a class="dropdown-item" href="{{ path('delegue_compte_rendu_stats_praticiens') }}">Statistiques</a>
+                        <a class="dropdown-item" href="{{ path('delegue_compte_rendu_stats_jour') }}">Statistiques par date</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Consulter</a>
+                    <div class="dropdown-menu" x-placement="bottom-start">
+                        <a class="dropdown-item" href="{{ path('delegue_medicament_index') }}">Médicaments</a>
+                        <a class="dropdown-item" href="{{ path('delegue_praticiens_index') }}">Praticiens</a>
+                    </div>
+                </li>
+            </ul>
+        {% elseif is_granted('ROLE_RESP_SECTEUR') %}
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{ path('responsable_index') }}">Accueil</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Compte rendu</a>
+                    <div class="dropdown-menu" x-placement="bottom-start">
+                        <a class="dropdown-item" href="{{ path('responsable_compte_rendu_index') }}">Consulter</a>
+                        <a class="dropdown-item" href="{{ path('responsable_compte_rendu_stats_praticiens') }}">Statistiques</a>
+                        <a class="dropdown-item" href="{{ path('responsable_compte_rendu_stats_jour') }}">Statistiques par date</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Consulter</a>
+                    <div class="dropdown-menu" x-placement="bottom-start">
+                        <a class="dropdown-item" href="{{ path('responsable_medicament_index') }}">Médicaments</a>
+                        <a class="dropdown-item" href="{{ path('responsable_praticiens_index') }}">Praticiens</a>
+                        <a class="dropdown-item" href="">Autres visiteurs</a>
+                    </div>
+                </li>
+            </ul>
+        {% elseif is_granted('ROLE_ADMIN') %}
+
+        {% endif %}
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="{{ path('fos_user_profile_show') }}">
+                    {{ 'layout.logged_in_as'|trans({'%username%': app.user.username}, 'FOSUserBundle') }}
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ path('fos_user_security_logout') }}">
+                    {{ 'layout.logout'|trans({}, 'FOSUserBundle') }}
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="container">
+    <div class="jumbotron mt-3">
+
+        {% block body %}
+            {% block fos_user_content %}
+            {% endblock fos_user_content %}
+        {% endblock %}
+    </div>
+</div>
+<!-- Bootstrap core JavaScript -->
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js" integrity="sha384-pjaaA8dDz/5BgdFUPX6M/9SUZv4d12SUPF0axWc+VRZkx5xU3daN+lYb49+Ax+Tl" crossorigin="anonymous"></script>
+<!--script type="text/javascript" src="/DataTables/media/js/jquery.dataTables.min.js"></script-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+<script type="text/javascript" src="/js/datatables-bt4.js"></script>
+<script type="text/javascript" src="/js/tab.js"></script>
+<script type="text/javascript" src="/js/jquery.bootstrap-duallistbox.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/plug-ins/1.10.19/i18n/French.json"></script>
+{% block javascript %}{% endblock %}
+</body>
+</html>

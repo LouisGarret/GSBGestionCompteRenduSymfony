@@ -1,0 +1,56 @@
+{% extends 'Responsable/base.html.twig' %}
+
+{% block title %}Famille{% endblock %}
+
+{% block body %}
+    <h1>Famille</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Code</th>
+                <td>{{ famille.Code }}</td>
+            </tr>
+            <tr>
+                <th>Libellé</th>
+                <td>{{ famille.Libelle }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <h2>Medicament Associée</h2>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">Dépôt légal</th>
+            <th scope="col">Nom Commercial</th>
+            <th scope="col">Composition</th>
+            <th scope="col">Effets</th>
+            <th scope="col">Contre Indications</th>
+            <th scope="col">Prix Echantillon</th>
+            <th scope="col">Famille</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for medicament in famille.medicaments %}
+            <tr>
+                <td>{{ medicament.DepotLegal }}</td>
+                <td><a href="{{ path('responsable_medicament_show', {'id': medicament.id}) }}">{{ medicament.NomCommercial }}</a></td>
+                <td>{{ medicament.Composition }}</td>
+                <td>{{ medicament.Effets }}</td>
+                <td>{{ medicament.ContreIndic }}</td>
+                <td>{{ medicament.PrixEchantillon }}</td>
+                <td><a href="{{ path('responsable_famille_show', {'id': medicament.famille.id}) }}">{{ medicament.famille.libelle }}</a></td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="8">Aucune famille n'a été trouvée</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a class="btn btn-outline-primary" href="{{ path('responsable_famille_index') }}">Retourner à la liste des familles</a>
+{% endblock %}

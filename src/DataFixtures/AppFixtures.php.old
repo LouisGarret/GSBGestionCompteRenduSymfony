@@ -1,0 +1,114 @@
+<?php
+
+namespace App\DataFixtures;
+
+use App\Entity\Role;
+use App\Entity\User1;
+use Doctrine\Bundle\FixturesBundle\Fixture;
+use Doctrine\Common\Persistence\ObjectManager;
+use Faker\Factory;
+
+class AppFixtures extends Fixture
+{
+    public function load(ObjectManager $manager)
+    {
+        $faker = Factory::create('FR-fr');
+
+
+
+        $adminUser = new User1();
+        $adminUser->setFirstName('Louis')
+            ->setLastName('Garret')
+            ->setEmail('louis@garret.ovh')
+            ->setUsername('lgarret')
+            ->setPassword('$2y$13$ckzznk1J.raSfFTBR6h6IOxFeOjXp8HJRwtgMaybhdzn8VN/AVFbi')
+            ->setSecteur("France")
+            ->addRole('ROLE_ADMIN');
+        $manager->persist($adminUser);
+
+        //Role Visiteur
+        /*$visiteurRole = new Role();
+        $visiteurRole->setTitle('ROLE_VISITEUR');
+        $manager->persist($visiteurRole);
+
+        $visiteurUser = new User1();
+        $visiteurUser->setFirstName('Visiteur')
+            ->setLastName('Visiteur')
+            ->setEmail('visiteur@garret.ovh')
+            ->setUsername('vvisiteur')
+            ->setPassword('$2y$13$ckzznk1J.raSfFTBR6h6IOxFeOjXp8HJRwtgMaybhdzn8VN/AVFbi')
+            ->setSecteur("Est")
+            ->addUserRole($visiteurRole);
+        $manager->persist($visiteurUser);
+
+        //Role Praticien
+        $praticienRole = new Role();
+        $praticienRole->setTitle('ROLE_PRATICIEN');
+        $manager->persist($praticienRole);
+
+        $praticienUser = new User1();
+        $praticienUser->setFirstName('Praticien')
+            ->setLastName('Praticien')
+            ->setEmail('praticien@garret.ovh')
+            ->setUsername('ppraticien')
+            ->setPassword('$2y$13$ckzznk1J.raSfFTBR6h6IOxFeOjXp8HJRwtgMaybhdzn8VN/AVFbi')
+            ->setSecteur("Ouest")
+            ->addUserRole($praticienRole);
+        $manager->persist($praticienUser);
+
+
+        //Role Delegue Regional
+        $delegRole= new Role();
+        $delegRole->setTitle('ROLE_DELEG_REGIONAL');
+        $manager->persist($delegRole);
+
+        $delegUser = new User1();
+        $delegUser->setFirstName('Délégué')
+            ->setLastName('Régional')
+            ->setEmail('delegue@garret.ovh')
+            ->setUsername('dregional')
+            ->setPassword('$2y$13$ckzznk1J.raSfFTBR6h6IOxFeOjXp8HJRwtgMaybhdzn8VN/AVFbi')
+            ->setSecteur("Nord")
+            ->addUserRole($delegRole);
+        $manager->persist($delegUser);
+
+        //Role Responsable de secteur
+        $respRole = new Role();
+        $respRole->setTitle('ROLE_RESP_SECTEUR');
+        $manager->persist($respRole);
+
+        $respUser = new User1();
+        $respUser->setFirstName('Responsable')
+            ->setLastName('Secteur')
+            ->setEmail('responsable@garret.ovh')
+            ->setUsername('rsecteur')
+            ->setPassword('$2y$13$ckzznk1J.raSfFTBR6h6IOxFeOjXp8HJRwtgMaybhdzn8VN/AVFbi')
+            ->setSecteur("Sud")
+            ->addUserRole($respRole);
+        $manager->persist($respUser);
+
+        /*
+        //Utilisateurs
+        $users = [];
+
+        for($i = 1; $i <= 10; $i++){
+            $user = new User1();
+
+            $user->setFirstName($faker->firstName)
+                ->setLastName($faker->lastName)
+                ->setUsername($faker->userName)
+                ->setEmail($faker->email)
+                ->setPassword('$2y$13$ckzznk1J.raSfFTBR6h6IOxFeOjXp8HJRwtgMaybhdzn8VN/AVFbi');
+
+            $manager->persist($user);
+            $users[] = $user;
+        }
+
+        // $product = new Product();
+        // $manager->persist($product);
+        */
+
+        $manager->flush();
+
+    }
+}

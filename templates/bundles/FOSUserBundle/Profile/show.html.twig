@@ -1,0 +1,99 @@
+{% trans_default_domain 'FOSUserBundle' %}
+{% extends 'bundles/FOSUserBundle/Profile/base.html.twig' %}
+
+{% block title %}Profile {% endblock %}
+
+{% block menu %}
+{% endblock %}
+
+{% block fos_user_content %}
+    {% for type, messages in app.session.flashbag.all() %}
+        {% for message in messages %}
+            <div class="alert alert-{{ type }} alert-dismissible fade show" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <strong>{{ message }}</strong>
+            </div>
+        {% endfor %}
+    {% endfor %}
+    <ul class="nav nav-tabs">
+        <li class="nav-item mr-1">
+            <a class="bg-primary nav-link active text-center my-auto text-white" data-toggle="tab" href="#profile"><h5><i class="fas fa-user"></i></h5></a>
+        </li>
+        <li class="nav-item mr-1">
+            <a class="bg-primary nav-link text-center my-auto text-white" data-toggle="tab" href="#profileEdit"><h5><i class="fas fa-user-edit"></i></h5></a>
+        </li>
+        <li class="nav-item">
+            <a class="bg-primary nav-link text-center my-auto text-white" data-toggle="tab" href="#password"><h5><i class="fas fa-key"></i></h5></a>
+        </li>
+    </ul>
+    <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade active show" id="profile">
+            <div class="card border-secondary mb-3 mt-0" style="max-width: 120em; border-top-left-radius:0!important;">
+                <div class="card-header text-center">
+                    <div class="border-bottom border-primary">
+                        <div class="border-primary my-auto mx-auto ">
+                            <h1 class="display-5">Profil</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body text-center">
+                    <h4 class="card-title">Détails :</h4>
+                    <hr>
+                    <div class="card-text">
+                        <div class="fos_user_user_show">
+                            <p><strong>{{ 'profile.show.username'|trans }} :</strong> {{ user.username }}</p>
+                            <p><strong>{{ 'profile.show.email'|trans }} :</strong> {{ user.email }}</p>
+                            <p><strong>{{ 'profile.show.last_name'|trans }} :</strong> {{ user.lastName }}</p>
+                            <p><strong>{{ 'profile.show.first_name'|trans }} :</strong> {{ user.firstName }}</p>
+                            {% if is_granted('ROLE_SUPER_ADMIN') or is_granted('ROLE_RESP_SECTEUR') %}
+                                <p>{{ 'profile.show.roles'|trans }} : {{ user.roles | join (', ') }}</p>
+                            {%endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="profileEdit">
+            <div class="card border-secondary mb-3 mt-0" style="max-width: 120em; border-top-left-radius:0!important;">
+                <div class="card-header text-center">
+                    <div class="border-bottom border-primary">
+                        <div class="border-primary my-auto mx-auto ">
+                            <h1 class="display-5">Modifier votre profil</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body text-center">
+                    <h4 class="card-title">Détails :</h4>
+                    <hr>
+                    <div class="card-text">
+                        <div class="fos_user_user_show">
+                            {{ form(form2) }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="password">
+            <div class="card border-secondary mb-3 mt-0" style="max-width: 120em; border-top-left-radius:0!important;">
+                <div class="card-header text-center">
+                    <div class="border-bottom border-primary">
+                        <div class="border-primary my-auto mx-auto ">
+                            <h1 class="display-5">Modifier votre mot de passe</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body text-center">
+                    <h4 class="card-title">Détails :</h4>
+                    <hr>
+                    <div class="card-text">
+                        <div class="fos_user_user_show">
+                            {{ form(form) }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

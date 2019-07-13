@@ -1,0 +1,1086 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="81d7c4f4-4e28-4643-9b22-6f56f8580203" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-884160097">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="php" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="PHP" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="PPE-GSB" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Controller/ResponsableController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-4435">
+              <caret line="179" lean-forward="true" selection-start-line="179" selection-end-line="179" />
+              <folding>
+                <element signature="e#34#61#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>border-top-left</find>
+      <find>/profile</find>
+      <find>@Route(&quot;/profile&quot;,</find>
+      <find>ChangePasswordController</find>
+      <find>password</find>
+      <find>.li:active</find>
+      <find>i {</find>
+      <find>.navbar.</find>
+      <find>.nav</find>
+      <find>.nav-tabs .nav</find>
+      <find>.nav-tabs .nav-item</find>
+      <find>.nav-tabs .nav-item + .nav-</find>
+      <find>.nav-:active</find>
+      <find>.nav-item :active</find>
+      <find>:active</find>
+      <find>li</find>
+      <find>tab</find>
+      <find>.nav-pills &gt; li</find>
+      <find>.nav-pills</find>
+      <find>navbar</find>
+      <find>apiToken</find>
+      <find>t</find>
+      <find>/api/auth/login</find>
+      <find>lexik_jwt_authentication.handler.authentication_success</find>
+      <find>regis</find>
+      <find>BaseUser</find>
+      <find>a</find>
+      <find>/compte/rendu</find>
+      <find>user</find>
+      <find>/api/</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+    <dirStrings>
+      <dir>C:\Users\Louis\Documents\GitHub\contexte-gsb-2018-2019\symfony\PPE-GSB\src\Controller</dir>
+      <dir>C:\Users\Louis\Documents\GitHub\contexte-gsb-2018-2019\symfony\PPE-GSB\src\DataFixtures</dir>
+      <dir>C:\Users\Louis\Documents\GitHub\contexte-gsb-2018-2019\symfony\PPE-GSB\vendor\friendsofsymfony\user-bundle\Mailer</dir>
+      <dir>C:\Users\Louis\Documents\GitHub\contexte-gsb-2018-2019\symfony\PPE-GSB\src\Migrations</dir>
+      <dir>C:\Users\Louis\Documents\GitHub\contexte-gsb-2018-2019\symfony\PPE-GSB\vendor</dir>
+      <dir>C:\Users\Louis\Documents\GitHub\contexte-gsb-2018-2019\symfony\PPE-GSB\translations</dir>
+      <dir>C:\Users\Louis\Documents\GitHub\contexte-gsb-2018-2019\symfony\PPE-GSB\vendor\friendsofsymfony</dir>
+      <dir>C:\Users\Louis\Documents\GitHub\contexte-gsb-2018-2019\symfony\PPE-GSB\config</dir>
+      <dir>C:\Users\Louis\Documents\GitHub\contexte-gsb-2018-2019\symfony\PPE-GSB</dir>
+      <dir>C:\Users\Louis\Documents\GitHub\contexte-gsb-2018-2019\symfony\PPE-GSB\templates\Administrateur</dir>
+    </dirStrings>
+  </component>
+  <component name="FrameworkCommandLineHistory">
+    <commandsHistory>
+      <command text="s doctrine:schema:update --force" />
+      <command text="s make:entity App\Entity\Region --regenerate" />
+      <command text="s make:entity App\Entity\TypePraticien --regenerate" />
+      <command text="s make:entity App\Entity\Specialite --regenerate" />
+      <command text="s make:entity App\Entity\Praticien --regenerate" />
+      <command text="s make:crud Praticien" />
+      <command text="s doctrine:schema:update --force" />
+      <command text="s make:entity App\Entity\Praticien --regenerate" />
+      <command text="s make:entity App\Entity\CompteRendu --regenerate" />
+      <command text="s make:entity App\Entity\User --regenerate" />
+      <command text="s doctrine:schema:update" />
+      <command text="s doctrine:schema:update --force" />
+      <command text="s doctrine:schema:update" />
+      <command text="s doctrine:schema:update --force" />
+      <command text="c clear-cache" />
+      <command text="s make:controller ApiController" />
+      <command text="s make:entity Vehicule" />
+      <command text="s doctrine:generate:entities App\Entity\Vehicule --regenerate" />
+      <command text="s make:entity  App\Entity\Vehicule --regenerate" />
+      <command text="s make:entity  App\Entity\CompteRendu --regenerate" />
+      <command text="s doctrine:schema:update --force" />
+      <command text="s make:entity  App\Entity\Vehicule --regenerate" />
+      <command text="s doctrine:schema:update --force" />
+      <command text="s make:crud Vehicule" />
+      <command text="s doctrine:schema:update --force" />
+    </commandsHistory>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/Entity/Praticien.php" />
+        <option value="$PROJECT_DIR$/src/Repository/UserRepository.php" />
+        <option value="$PROJECT_DIR$/src/Repository/CompteRenduRepository.php" />
+        <option value="$PROJECT_DIR$/templates/Delegue/compte_rendu/statistiques/stats_praticiens.html.twig" />
+        <option value="$PROJECT_DIR$/templates/Delegue/compte_rendu/statistiques/base.html.twig" />
+        <option value="$PROJECT_DIR$/templates/Delegue/compte_rendu/statistiques/stats_praticiens_date.html.twig" />
+        <option value="$PROJECT_DIR$/templates/Delegue/compte_rendu/statistiques/stats_praticiens_date_form.html.twig" />
+        <option value="$PROJECT_DIR$/templates/base.html.twig" />
+        <option value="$PROJECT_DIR$/src/Controller/HomepageController.php" />
+        <option value="$PROJECT_DIR$/src/Controller/UserController.php" />
+        <option value="$PROJECT_DIR$/templates/bundles/FOSUserBundle/Profile/show.html.twig" />
+        <option value="$PROJECT_DIR$/templates/bundles/FOSUserBundle/Profile/base.html.twig" />
+        <option value="$PROJECT_DIR$/templates/Delegue/Praticien/praticiens.html.twig" />
+        <option value="$PROJECT_DIR$/templates/Responsable/Praticien/praticiens.html.twig" />
+        <option value="$PROJECT_DIR$/templates/Visiteur/Praticien/praticiens.html.twig" />
+        <option value="$PROJECT_DIR$/config/packages/security.yaml" />
+        <option value="$PROJECT_DIR$/src/Controller/AdministrateurController.php" />
+        <option value="$PROJECT_DIR$/src/Entity/CompteRendu.php" />
+        <option value="$PROJECT_DIR$/templates/vehicule/index.html.twig" />
+        <option value="$PROJECT_DIR$/public/js/tab.js" />
+        <option value="$PROJECT_DIR$/templates/Responsable/compte_rendu/show.html.twig" />
+        <option value="$PROJECT_DIR$/templates/Delegue/compte_rendu/show.html.twig" />
+        <option value="$PROJECT_DIR$/templates/Responsable/vehicule/_form.html.twig" />
+        <option value="$PROJECT_DIR$/templates/Delegue/vehicule/new.html.twig" />
+        <option value="$PROJECT_DIR$/src/Controller/VehiculeController.php" />
+        <option value="$PROJECT_DIR$/src/Form/VehiculeType.php" />
+        <option value="$PROJECT_DIR$/templates/Responsable/vehicule/edit.html.twig" />
+        <option value="$PROJECT_DIR$/templates/Responsable/vehicule/new.html.twig" />
+        <option value="$PROJECT_DIR$/templates/Responsable/vehicule/index.html.twig" />
+        <option value="$PROJECT_DIR$/templates/Responsable/vehicule/_delete_form.html.twig" />
+        <option value="$PROJECT_DIR$/templates/Visiteur/base.html.twig" />
+        <option value="$PROJECT_DIR$/templates/Responsable/base.html.twig" />
+        <option value="$PROJECT_DIR$/templates/Delegue/base.html.twig" />
+        <option value="$PROJECT_DIR$/src/Controller/VisiteurController.php" />
+        <option value="$PROJECT_DIR$/src/Controller/DelegueController.php" />
+        <option value="$PROJECT_DIR$/templates/Visiteur/vehicule/index.html.twig" />
+        <option value="$PROJECT_DIR$/templates/Delegue/vehicule/index.html.twig" />
+        <option value="$PROJECT_DIR$/templates/Delegue/vehicule/show.html.twig" />
+        <option value="$PROJECT_DIR$/templates/Responsable/vehicule/show.html.twig" />
+        <option value="$PROJECT_DIR$/templates/Visiteur/vehicule/show.html.twig" />
+        <option value="$PROJECT_DIR$/src/Controller/ResponsableController.php" />
+        <option value="$PROJECT_DIR$/config/packages/easy_admin.yaml" />
+        <option value="$PROJECT_DIR$/templates/Delegue/compte_rendu/index.html.twig" />
+        <option value="$PROJECT_DIR$/templates/Visiteur/index.html.twig" />
+        <option value="$PROJECT_DIR$/templates/Responsable/index.html.twig" />
+        <option value="$PROJECT_DIR$/templates/Delegue/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/Form/CompteRenduType.php" />
+        <option value="$PROJECT_DIR$/templates/Responsable/compte_rendu/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/Entity/Vehicule.php" />
+        <option value="$PROJECT_DIR$/templates/Visiteur/compte_rendu/show.html.twig" />
+        <option value="$PROJECT_DIR$/templates/Visiteur/compte_rendu/index.html.twig" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpWebServerValidation" deployment_server_id="742b8a0e-cf8d-4a24-aced-377a2e3c1311" path_to_validation_script="C:\Users\Louis\Documents\GitHub\contexte-gsb-2018-2019\symfony\PPE-GSB" selected_validation_type="LOCAL" web_path_to_validation_script="http://127.0.0.1:8000" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.0">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/vendor/symfony/dependency-injection" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-bundle" />
+      <path value="$PROJECT_DIR$/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/vendor/symfony/validator" />
+      <path value="$PROJECT_DIR$/vendor/symfony/browser-kit" />
+      <path value="$PROJECT_DIR$/vendor/symfony/profiler-pack" />
+      <path value="$PROJECT_DIR$/vendor/symfony/dom-crawler" />
+      <path value="$PROJECT_DIR$/vendor/symfony/test-pack" />
+      <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/vendor/symfony/property-access" />
+      <path value="$PROJECT_DIR$/vendor/symfony/monolog-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-icu" />
+      <path value="$PROJECT_DIR$/vendor/symfony/cache" />
+      <path value="$PROJECT_DIR$/vendor/symfony/serializer-pack" />
+      <path value="$PROJECT_DIR$/vendor/symfony/doctrine-bridge" />
+      <path value="$PROJECT_DIR$/vendor/symfony/options-resolver" />
+      <path value="$PROJECT_DIR$/vendor/jdorn/sql-formatter" />
+      <path value="$PROJECT_DIR$/vendor/symfony/swiftmailer-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/twig-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/vendor/symfony/web-server-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/phpunit-bridge" />
+      <path value="$PROJECT_DIR$/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/vendor/symfony/expression-language" />
+      <path value="$PROJECT_DIR$/vendor/symfony/maker-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/inflector" />
+      <path value="$PROJECT_DIR$/vendor/symfony/web-link" />
+      <path value="$PROJECT_DIR$/vendor/facebook/webdriver" />
+      <path value="$PROJECT_DIR$/vendor/symfony/web-profiler-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/vendor/symfony/serializer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/orm-pack" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/reflection" />
+      <path value="$PROJECT_DIR$/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/persistence" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/vendor/zendframework/zend-code" />
+      <path value="$PROJECT_DIR$/vendor/symfony/flex" />
+      <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/vendor/zendframework/zend-eventmanager" />
+      <path value="$PROJECT_DIR$/vendor/symfony/panther" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug-pack" />
+      <path value="$PROJECT_DIR$/vendor/symfony/property-info" />
+      <path value="$PROJECT_DIR$/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/vendor/symfony/framework-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/vendor/symfony/intl" />
+      <path value="$PROJECT_DIR$/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/vendor/symfony/twig-bridge" />
+      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/dotenv" />
+      <path value="$PROJECT_DIR$/vendor/symfony/form" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/asset" />
+      <path value="$PROJECT_DIR$/vendor/symfony/monolog-bridge" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/symfony/config" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/stopwatch" />
+      <path value="$PROJECT_DIR$/vendor/fig/link-util" />
+      <path value="$PROJECT_DIR$/vendor/easycorp/easy-log-handler" />
+      <path value="$PROJECT_DIR$/vendor/sensio/framework-extra-bundle" />
+      <path value="$PROJECT_DIR$/vendor/ocramius/package-versions" />
+      <path value="$PROJECT_DIR$/vendor/ocramius/proxy-manager" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-cache-bundle" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/vendor/psr/link" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/common" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/migrations" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-migrations-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/data-fixtures" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
+      <path value="$PROJECT_DIR$/vendor/fzaninotto/faker" />
+      <path value="$PROJECT_DIR$/vendor/symfony/templating" />
+      <path value="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle" />
+      <path value="$PROJECT_DIR$/vendor/willdurand/negotiation" />
+      <path value="$PROJECT_DIR$/vendor/willdurand/jsonp-callback-validator" />
+      <path value="$PROJECT_DIR$/vendor/friendsofsymfony/rest-bundle" />
+      <path value="$PROJECT_DIR$/vendor/pagerfanta/pagerfanta" />
+      <path value="$PROJECT_DIR$/vendor/webonaute/doctrine-fixtures-generator-bundle" />
+      <path value="$PROJECT_DIR$/vendor/easycorp/easyadmin-bundle" />
+      <path value="$PROJECT_DIR$/vendor/twig/extensions" />
+      <path value="$PROJECT_DIR$/vendor/cmen/google-charts-bundle" />
+      <path value="$PROJECT_DIR$/vendor/lcobucci/jwt" />
+      <path value="$PROJECT_DIR$/vendor/lexik/jwt-authentication-bundle" />
+      <path value="$PROJECT_DIR$/vendor/namshi/jose" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="230" />
+    <option name="y" value="-15" />
+    <option name="width" value="1240" />
+    <option name="height" value="685" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="PPE-GSB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PPE-GSB" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PPE-GSB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PPE-GSB" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PPE-GSB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PPE-GSB" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PPE-GSB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PPE-GSB" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PPE-GSB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PPE-GSB" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PPE-GSB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PPE-GSB" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PPE-GSB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PPE-GSB" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PPE-GSB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PPE-GSB" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PPE-GSB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PPE-GSB" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Form" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PPE-GSB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PPE-GSB" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Repository" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PPE-GSB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PPE-GSB" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PPE-GSB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PPE-GSB" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="Delegue" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PPE-GSB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PPE-GSB" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="Delegue" type="462c0819:PsiDirectoryNode" />
+              <item name="compte_rendu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PPE-GSB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PPE-GSB" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="Delegue" type="462c0819:PsiDirectoryNode" />
+              <item name="vehicule" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PPE-GSB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PPE-GSB" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="Responsable" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PPE-GSB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PPE-GSB" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="Responsable" type="462c0819:PsiDirectoryNode" />
+              <item name="compte_rendu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PPE-GSB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PPE-GSB" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="Responsable" type="462c0819:PsiDirectoryNode" />
+              <item name="vehicule" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PPE-GSB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PPE-GSB" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="Visiteur" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PPE-GSB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PPE-GSB" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="Visiteur" type="462c0819:PsiDirectoryNode" />
+              <item name="compte_rendu" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="PPE-GSB" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Twig" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="web.server" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Louis\Documents\GitHub\contexte-gsb-2018-2019\symfony\PPE-GSB\templates\Visiteur" />
+      <recent name="C:\Users\Louis\Documents\GitHub\contexte-gsb-2018-2019\symfony\PPE-GSB\templates\Delegue" />
+      <recent name="C:\Users\Louis\Documents\GitHub\contexte-gsb-2018-2019\symfony\PPE-GSB\templates\Delegue\compte_rendu" />
+      <recent name="C:\Users\Louis\Documents\GitHub\contexte-gsb-2018-2019\symfony\PPE-GSB\src\Form" />
+      <recent name="C:\Users\Louis\Documents\GitHub\contexte-gsb-2018-2019\symfony\PPE-GSB\templates\Responsable\compte_rendu" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Louis\Documents\GitHub\contexte-gsb-2018-2019\symfony\PPE-GSB\templates\Responsable" />
+      <recent name="C:\Users\Louis\Documents\GitHub\contexte-gsb-2018-2019\symfony\PPE-GSB\templates\OLD_DIRECTORY" />
+      <recent name="C:\Users\Louis\Documents\GitHub\contexte-gsb-2018-2019\symfony\PPE-GSB\templates\Responsable\compte_rendu\statistiques" />
+      <recent name="C:\Users\Louis\Documents\GitHub\contexte-gsb-2018-2019\symfony\PPE-GSB\src\Controller\Api" />
+      <recent name="C:\Users\Louis\Documents\GitHub\contexte-gsb-2018-2019\symfony\PPE-GSB\src\Security" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="81d7c4f4-4e28-4643-9b22-6f56f8580203" name="Default Changelist" comment="" />
+      <created>1543357910517</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1543357910517</updated>
+      <workItem from="1543357913256" duration="3096000" />
+      <workItem from="1543433640410" duration="4202000" />
+      <workItem from="1543440891347" duration="22000" />
+      <workItem from="1543440938091" duration="185000" />
+      <workItem from="1543577312995" duration="4796000" />
+      <workItem from="1543842276041" duration="26448000" />
+      <workItem from="1543877429472" duration="370000" />
+      <workItem from="1543914592211" duration="6892000" />
+      <workItem from="1543921561333" duration="1132000" />
+      <workItem from="1543933244983" duration="6399000" />
+      <workItem from="1543948704791" duration="262000" />
+      <workItem from="1543963356355" duration="1561000" />
+      <workItem from="1544445922189" duration="2503000" />
+      <workItem from="1544541507407" duration="7399000" />
+      <workItem from="1545051613886" duration="1108000" />
+      <workItem from="1545143860030" duration="887000" />
+      <workItem from="1546874766200" duration="602000" />
+      <workItem from="1547558756256" duration="1076000" />
+      <workItem from="1547564785581" duration="1348000" />
+      <workItem from="1548070590545" duration="566000" />
+      <workItem from="1548170364334" duration="41000" />
+      <workItem from="1548170413341" duration="6172000" />
+      <workItem from="1548200679821" duration="12000" />
+      <workItem from="1548200769461" duration="112000" />
+      <workItem from="1548201872397" duration="509000" />
+      <workItem from="1548593551828" duration="7399000" />
+      <workItem from="1548618002133" duration="2896000" />
+      <workItem from="1548667254984" duration="3129000" />
+      <workItem from="1548675308066" duration="9955000" />
+      <workItem from="1548746525974" duration="4004000" />
+      <workItem from="1548751375042" duration="1642000" />
+      <workItem from="1548754127953" duration="343000" />
+      <workItem from="1549190407564" duration="108000" />
+      <workItem from="1549191016594" duration="171000" />
+      <workItem from="1549191212608" duration="2778000" />
+      <workItem from="1549265183102" duration="5873000" />
+      <workItem from="1549278647105" duration="10777000" />
+      <workItem from="1549374511650" duration="3465000" />
+      <workItem from="1549884762934" duration="6813000" />
+      <workItem from="1549954883554" duration="5532000" />
+      <workItem from="1549969627965" duration="14535000" />
+      <workItem from="1550294760916" duration="15188000" />
+      <workItem from="1550487573280" duration="866000" />
+      <workItem from="1550488732379" duration="3215000" />
+      <workItem from="1550494052678" duration="6255000" />
+      <workItem from="1550574294724" duration="12069000" />
+      <workItem from="1550666043692" duration="8061000" />
+      <workItem from="1550829047714" duration="351000" />
+      <workItem from="1551265330889" duration="6586000" />
+      <workItem from="1551698925677" duration="25918000" />
+      <workItem from="1552173631306" duration="893000" />
+      <workItem from="1552219883715" duration="7328000" />
+      <workItem from="1552304397461" duration="9611000" />
+      <workItem from="1552387981262" duration="351000" />
+      <workItem from="1552393209740" duration="2379000" />
+      <workItem from="1552730432969" duration="1522000" />
+      <workItem from="1552756389603" duration="4160000" />
+      <workItem from="1552809777318" duration="4535000" />
+      <workItem from="1552900320655" duration="26201000" />
+      <workItem from="1553032260471" duration="239000" />
+      <workItem from="1553077211392" duration="9516000" />
+      <workItem from="1553213637373" duration="25240000" />
+      <workItem from="1553552332921" duration="582000" />
+      <workItem from="1553585801127" duration="1209000" />
+      <workItem from="1554109574740" duration="2081000" />
+      <workItem from="1554126402768" duration="15960000" />
+      <workItem from="1554556054249" duration="8825000" />
+      <workItem from="1554743426022" duration="22821000" />
+      <workItem from="1555330693071" duration="1020000" />
+      <workItem from="1555333552076" duration="4188000" />
+      <workItem from="1555401013902" duration="32000" />
+      <workItem from="1555401060114" duration="16000" />
+      <workItem from="1555401092240" duration="21200000" />
+      <workItem from="1555861005753" duration="1461000" />
+      <workItem from="1555868385982" duration="1047000" />
+      <workItem from="1555923184074" duration="1940000" />
+      <workItem from="1556135419770" duration="6407000" />
+      <workItem from="1556374893530" duration="1873000" />
+      <workItem from="1556624242235" duration="74000" />
+      <workItem from="1557321709027" duration="3958000" />
+      <workItem from="1557853418751" duration="2384000" />
+      <workItem from="1558365184953" duration="599000" />
+      <workItem from="1558384808608" duration="724000" />
+      <workItem from="1558879455690" duration="8723000" />
+      <workItem from="1559021850642" duration="3686000" />
+      <workItem from="1559297237870" duration="13767000" />
+      <workItem from="1559388809569" duration="8784000" />
+      <workItem from="1559468413203" duration="16087000" />
+      <workItem from="1559506752632" duration="1538000" />
+      <workItem from="1559590290837" duration="13670000" />
+      <workItem from="1559801413728" duration="414000" />
+      <workItem from="1559801899251" duration="8965000" />
+      <workItem from="1563019703061" duration="653000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="504289000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.486631" visible="true" weight="0.2196162" />
+      <window_info id="Structure" order="1" sideWeight="0.51336896" side_tool="true" weight="0.21744967" />
+      <window_info id="Favorites" order="2" sideWeight="0.5021552" side_tool="true" weight="0.20134228" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4968017" weight="0.3198324" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32681563" />
+      <window_info anchor="bottom" id="File Transfer" order="7" sideWeight="0.4914712" visible="true" weight="0.15618221" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.7388268" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Command Line Tools Console" order="11" sideWeight="0.490604" weight="0.28351957" />
+      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.4919463" weight="0.23324022" />
+      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50852877" side_tool="true" weight="0.12754555" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.32867134" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" weight="0.5932886" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Remote Host" order="7" weight="0.3295302" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/config/routes.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/Api/ApiAuthController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-879" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1830">
+          <caret line="118" lean-forward="true" selection-start-line="118" selection-end-line="118" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/packages/security.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1513">
+          <caret line="94" column="40" selection-start-line="94" selection-start-column="40" selection-end-line="94" selection-end-column="40" />
+          <folding>
+            <element signature="e#69#117#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/AdministrateurController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="81" column="32" lean-forward="true" selection-start-line="81" selection-start-column="12" selection-end-line="81" selection-end-column="32" />
+          <folding>
+            <element signature="e#777#814#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/PraticienController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-867" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Delegue/compte_rendu/new.html.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Visiteur/compte_rendu/new.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Visiteur/compte_rendu/_form.html.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-209">
+          <caret line="31" column="67" selection-start-line="31" selection-start-column="67" selection-end-line="31" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/Medicament.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-170">
+          <caret line="28" column="26" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Form/StatTicketDateType.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Repository/RegionRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Form/StatTicketRegionType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="34" column="42" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
+          <folding>
+            <element signature="e#28#50#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/Praticien.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="52" column="7" selection-start-line="50" selection-start-column="4" selection-end-line="52" selection-end-column="7" />
+          <folding>
+            <element signature="e#30#78#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/tab.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Responsable/vehicule/_form.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="68" selection-start-line="2" selection-start-column="68" selection-end-line="2" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Delegue/vehicule/new.html.twig" />
+    <entry file="file://$PROJECT_DIR$/src/Controller/VehiculeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Form/VehiculeType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="15" column="76" selection-start-line="15" selection-start-column="76" selection-end-line="15" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Responsable/vehicule/edit.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="24" selection-start-column="24" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Responsable/vehicule/new.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="16" lean-forward="true" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Responsable/vehicule/_delete_form.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Visiteur/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="79" selection-start-line="21" selection-start-column="79" selection-end-line="21" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/VisiteurController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="224" column="66" lean-forward="true" selection-start-line="224" selection-start-column="16" selection-end-line="224" selection-end-column="66" />
+          <folding>
+            <element signature="e#34#61#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Visiteur/vehicule/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="61" selection-start-line="23" selection-start-column="61" selection-end-line="23" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/DelegueController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="238" column="70" lean-forward="true" selection-start-line="238" selection-start-column="70" selection-end-line="238" selection-end-column="70" />
+          <folding>
+            <element signature="e#34#61#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Responsable/vehicule/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="13" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Visiteur/vehicule/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/packages/easy_admin.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/Famille.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Responsable/compte_rendu/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1088">
+          <caret line="64" column="13" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Delegue/vehicule/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="23" column="59" selection-start-line="23" selection-start-column="59" selection-end-line="23" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Delegue/compte_rendu/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="49" column="34" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Visiteur/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="127" selection-start-line="27" selection-start-column="127" selection-end-line="27" selection-end-column="127" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Responsable/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="130" selection-start-line="22" selection-start-column="130" selection-end-line="22" selection-end-column="130" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Repository/CompteRenduRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="36" column="34" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Delegue/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="93" selection-start-line="23" selection-start-column="93" selection-end-line="23" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Delegue/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="126" selection-start-line="27" selection-start-column="126" selection-end-line="27" selection-end-column="126" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Responsable/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Responsable/vehicule/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+          <folding>
+            <element signature="e#12#38#0#Twig" expanded="true" />
+            <element signature="e#643#656#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Responsable/compte_rendu/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="901">
+          <caret line="53" column="66" selection-start-line="53" selection-start-column="66" selection-end-line="53" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/Vehicule.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+          <folding>
+            <element signature="e#30#78#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/CompteRendu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1530">
+          <caret line="95" column="5" lean-forward="true" selection-start-line="95" selection-start-column="5" selection-end-line="95" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Delegue/vehicule/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="17" selection-start-line="9" selection-start-column="12" selection-end-line="12" selection-end-column="17" />
+          <folding>
+            <element signature="e#12#34#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Delegue/compte_rendu/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="60" column="13" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Visiteur/compte_rendu/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1207">
+          <caret line="71" column="12" lean-forward="true" selection-start-line="71" selection-start-column="12" selection-end-line="71" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Form/CompteRenduType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1547">
+          <caret line="119" lean-forward="true" selection-start-line="119" selection-end-line="119" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Visiteur/compte_rendu/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="63" column="44" lean-forward="true" selection-start-line="63" selection-start-column="44" selection-end-line="63" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/ResponsableController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4435">
+          <caret line="179" lean-forward="true" selection-start-line="179" selection-end-line="179" />
+          <folding>
+            <element signature="e#34#61#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

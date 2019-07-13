@@ -1,0 +1,15 @@
+{% extends 'Visiteur/base.html.twig' %}
+
+{% block title %}Nouveau{% endblock %}
+
+{%  block stylesheets %}
+    <link href="/css/bootstrap-duallistbox.css" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+    <h1>Créer un nouveau compte rendu</h1>
+
+    {{ include('Visiteur/compte_rendu/_form.html.twig') }}
+
+    <a class="btn btn-outline-primary mt-3" href="{{ path('visiteur_compte_rendu_index') }}">Retourner à la liste des comptes rendu</a>
+{% endblock %}

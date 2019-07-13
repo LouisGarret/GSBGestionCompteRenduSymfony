@@ -1,0 +1,51 @@
+{% trans_default_domain 'FOSUserBundle' %}
+{% extends 'base.html.twig' %}
+
+{% block title %}User{% endblock %}
+
+{% block body %}
+    <div class="jumbotron mt-3">
+        {% for type, messages in app.session.flashbag.all() %}
+            {% for message in messages %}
+                <div class="alert alert-{{ type }} alert-dismissible fade show" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <strong>{{ message }}</strong>
+                </div>
+            {% endfor %}
+        {% endfor %}
+        <h1>Profile</h1>
+        <div class="fos_user_user_show">
+            <p>{{ 'profile.show.username'|trans }} : {{ user.username }}</p>
+            <p>{{ 'profile.show.email'|trans }} : {{ user.email }}</p>
+            <p>{{ 'profile.show.last_name'|trans }} : {{ user.lastName }}</p>
+            <p>{{ 'profile.show.first_name'|trans }} : {{ user.firstName }}</p>
+            <p>{{ 'profile.show.secteur'|trans }} :  {{ user.region.libelle }}</p>
+            {% if is_granted('ROLE_SUPER_ADMIN') or is_granted('ROLE_RESP_SECTEUR') %}
+                <p>{{ 'profile.show.roles'|trans }} : {{ user.roles | join (', ') }}</p>
+            {%endif %}
+        </div>
+    </div>
+    {% if app.user.username == user.username %}
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <p class="lead">
+                    <a class="btn btn-outline-dark" href="{{ path('fos_user_profile_edit') }}" role="button">Modifier vos informations</a>
+                </p>
+            </div>
+            <div class="col">
+                <p class="lead">
+                    <a class="btn btn-outline-dark" href="{{ path('fos_user_change_password') }}" role="button">Changer votre mot de passe</a>
+                </p>
+            </div>
+        </div>
+    </div>
+{% endif %}
+    <a href="{{ path('user_index') }}">back to list</a>
+
+    <a href="{{ path('user_edit', {'id': user.id}) }}">edit</a>
+
+    {{ include('user/_delete_form.html.twig') }}
+{% endblock %}
